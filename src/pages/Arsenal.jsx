@@ -93,6 +93,111 @@ const gadgets = [
       },
     },
   },
+  {
+    id: 'batmobile',
+    name: 'Batmobile',
+    category: 'VEHICLE',
+    image: null,
+    status: 'ACTIVE DEPLOYMENT',
+    tabs: {
+      overview: {
+        description: 'Armored pursuit vehicle combining military-grade protection with hypercar performance. Jet turbine engine delivers 1,500 bhp with ceramic-coated exhaust for thermal stealth. Non-lethal defense systems include EMP burst, smoke screen, and caltrops.',
+        specs: { Engine: 'Jet Turbine / 1,500 bhp', 'Top Speed': '330 km/h', Armor: 'Reactive composite plating', Weight: '2.8 metric tons' },
+      },
+      schematics: {
+        description: 'Monocoque carbon-titanium chassis with independent suspension rated for 3G lateral loads. Front axle houses twin electric motors for silent approach mode. Rear jet turbine engages at 120km/h+ for pursuit. Cockpit is CBRN sealed with 12-hour air supply.',
+        specs: { Chassis: 'Carbon-titanium monocoque', Suspension: '3G rated independent', 'Silent Mode': 'Dual electric motors', Cockpit: 'CBRN sealed / 12hr air' },
+      },
+      deployment: {
+        description: 'Remote-summon via encrypted voice command or cowl neural link (range: 8km urban). Self-driving AI can execute extraction routes autonomously. Ejection seat rated to 200km/h. Self-destruct charges prevent capture — 15 second timer with abort.',
+        specs: { Summon: '8km range / neural link', AI: 'Level 4 autonomous driving', Ejection: 'Rated 200km/h', Destruct: '15s timer / abort capable' },
+      },
+    },
+  },
+  {
+    id: 'batcave',
+    name: 'The Batcave',
+    category: 'INSTALLATION',
+    image: null,
+    status: 'CLASSIFIED',
+    tabs: {
+      overview: {
+        description: 'Central command hub located beneath Wayne Manor. Houses the complete operational infrastructure: vehicle bay, forensics lab, armory, medical suite, and training facilities. Powered by a sub-fusion reactor providing indefinite off-grid capability.',
+        specs: { Location: 'Classified / Sub-Wayne Manor', Power: 'Sub-Fusion Reactor (50MW)', Area: '~12,000 sq meters', Depth: '45m below surface' },
+      },
+      schematics: {
+        description: 'Natural cavern system reinforced with structural carbon-fiber webbing. Separated into zones: Command (Bat-Computer array), Armory (climate-controlled vault), Vehicle Bay (6-car capacity + aerial), Medical (surgical suite + cryo-storage), and Training (programmable holographic environment).',
+        specs: { Zones: '5 primary sectors', 'Vehicle Bay': '6 ground + 2 aerial', Medical: 'Full surgical suite', Training: 'Holographic combat sim' },
+      },
+      deployment: {
+        description: 'Multiple access points: hydraulic platform (primary), underwater tunnel (submarine bay), cliff-face launch ramp (Batwing), and emergency pedestrian exit to Bristol County. Biometric + voice + retinal scan required. Lockdown mode seals all entries in 4.2 seconds.',
+        specs: { Access: '4 entry/exit points', Security: 'Tri-factor biometric', Lockdown: '4.2s full seal', Backup: '72hr emergency power' },
+      },
+    },
+  },
+  {
+    id: 'batcycle',
+    name: 'Batcycle',
+    category: 'VEHICLE',
+    image: null,
+    status: 'FIELD READY',
+    tabs: {
+      overview: {
+        description: 'Urban interceptor motorcycle optimized for Gotham\'s narrow streets and rooftop-level pursuit. Dual grenade launchers (non-lethal: smoke, flash, EMP) integrated into front cowling. Escape pod ejects rider with 30m vertical clearance in emergency.',
+        specs: { Engine: 'Electric + Turbo Hybrid', 'Top Speed': '290 km/h', Weight: '240kg', Armament: 'Dual grenade launchers' },
+      },
+      schematics: {
+        description: 'Hub-center steering for extreme lean angles (62°). Magnetorheological suspension adapts to terrain in real-time. Tire compound includes embedded micro-spikes that deploy on ice/wet surfaces. Frame integrates grapple-launch point for vertical wall riding.',
+        specs: { Steering: 'Hub-center / 62° lean', Suspension: 'Magnetorheological adaptive', Tires: 'Micro-spike deployment', Frame: 'Grapple-assist wall climbing' },
+      },
+      deployment: {
+        description: 'Deployed from Batmobile rear bay or Batcave ground-level exit. Can be remotely piloted as decoy. Escape pod deploys via explosive bolts — launches rider 30m vertically with parafoil glide. Self-balancing gyroscope allows zero-speed stability for precision shooting.',
+        specs: { Launch: 'Batmobile bay / Cave exit', Remote: 'Full drone capability', 'Escape Pod': '30m vertical / parafoil', Stability: 'Zero-speed gyroscope' },
+      },
+    },
+  },
+  {
+    id: 'freezegun',
+    name: 'Freeze Gun (Reverse-Engineered)',
+    category: 'SPECIAL WEAPONS',
+    image: null,
+    status: 'PROTOTYPE',
+    tabs: {
+      overview: {
+        description: 'Reverse-engineered from captured Mr. Freeze technology. Fires an absolute zero cryo-stream that flash-freezes targets in under 0.5 seconds. Liquid nitrogen core provides 14 shots before requiring recharge. Classified as non-lethal at low settings.',
+        specs: { 'Core Temp': '-273.15°C (absolute zero)', Shots: '14 per core', 'Freeze Time': '< 0.5s at full power', Classification: 'Non-lethal (low setting)' },
+      },
+      schematics: {
+        description: 'Miniaturized Fries cryogenic chamber scaled to handheld form factor. Triple-insulated barrel prevents user frostbite. Targeting laser compensates for cryo-stream trajectory drop. Power cell is a WayneTech cold-fusion micro-cell — hazardous if ruptured.',
+        specs: { Barrel: 'Triple-insulated graphene', Targeting: 'Cryo-trajectory compensating', 'Power Cell': 'Cold-fusion micro-cell', Safety: 'Auto-shutoff at 2°C ambient' },
+      },
+      deployment: {
+        description: 'Thigh-holster mount with thermal-lock safety. Designed for incapacitation of meta-human threats resistant to conventional takedown. NOT approved for general field use — requires Level 4 authorization. Defrost protocol available via secondary trigger.',
+        specs: { Holster: 'Thigh-mount / thermal-lock', Auth: 'Level 4 required', Use: 'Meta-human incapacitation', Defrost: 'Secondary trigger / 12s' },
+      },
+    },
+  },
+  {
+    id: 'batcomputer',
+    name: 'Bat-Computer',
+    category: 'INTELLIGENCE',
+    image: null,
+    status: 'ACTIVE DEPLOYMENT',
+    tabs: {
+      overview: {
+        description: 'Omniscient data network forming the backbone of all Batman operations. Global satellite uplink provides real-time surveillance across 14 orbital platforms. Oracle Protocol integration enables cooperative intelligence sharing with allied operatives worldwide.',
+        specs: { Processing: '847 PFLOPS quantum array', Storage: '~12 Exabytes', Uplinks: '14 orbital satellites', Network: 'Oracle Protocol (global)' },
+      },
+      schematics: {
+        description: 'Distributed quantum computing array across 3 physical locations (redundancy). Holographic display wall spans 8 meters with gesture and voice control. Neural-link interface allows direct cognitive queries — response time: 0.02s. Self-evolving AI handles pattern recognition.',
+        specs: { Cores: '3 distributed quantum nodes', Display: '8m holographic wall', Interface: 'Neural-link / voice / gesture', AI: 'Self-evolving pattern engine' },
+      },
+      deployment: {
+        description: 'Primary terminal in Batcave command center. Secondary access via cowl HUD (limited bandwidth). Emergency access from any WayneTech terminal with biometric override. Data is quantum-encrypted — physically impossible to intercept without collapsing the information.',
+        specs: { Primary: 'Batcave command center', Mobile: 'Cowl HUD (limited)', Emergency: 'WayneTech terminal override', Encryption: 'Quantum-entangled keys' },
+      },
+    },
+  },
 ];
 
 const tabLabels = ['overview', 'schematics', 'deployment'];
@@ -154,12 +259,22 @@ function GadgetCard({ gadget, index }) {
 
       {/* Image section */}
       <div className="relative aspect-[16/9] w-full overflow-hidden">
-        <img
-          src={gadget.image}
-          alt={gadget.name}
-          className="h-full w-full object-cover opacity-80 transition-all duration-700 group-hover:opacity-100 group-hover:scale-105"
-          loading="lazy"
-        />
+        {gadget.image ? (
+          <img
+            src={gadget.image}
+            alt={gadget.name}
+            className="h-full w-full object-cover opacity-80 transition-all duration-700 group-hover:opacity-100 group-hover:scale-105"
+            loading="lazy"
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-gotham-700 to-gotham-950">
+            <span className="font-display text-[60px] uppercase leading-none text-signal/[0.08] transition-all duration-700 group-hover:text-signal/[0.15] group-hover:scale-110">
+              {gadget.name[0]}
+            </span>
+            {/* Technical grid lines */}
+            <div className="absolute inset-0 opacity-40" style={{ backgroundImage: 'linear-gradient(rgba(245,197,24,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(245,197,24,0.04) 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+          </div>
+        )}
         {/* Blueprint grid overlay */}
         <div
           className="absolute inset-0 opacity-20 transition-opacity duration-500 group-hover:opacity-40"
@@ -183,6 +298,8 @@ function GadgetCard({ gadget, index }) {
               ? 'bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/30'
               : gadget.status === 'ACTIVE DEPLOYMENT'
               ? 'bg-green-500/20 text-green-400 ring-1 ring-green-500/30'
+              : gadget.status === 'CLASSIFIED'
+              ? 'bg-purple-500/20 text-purple-400 ring-1 ring-purple-500/30'
               : 'bg-signal/20 text-signal ring-1 ring-signal/30'
           }`}>
             {gadget.status}
@@ -259,7 +376,7 @@ export default function Arsenal() {
       title="WayneTech & Field Gear"
       lead="Classified hardware from the Applied Sciences division. Click the tabs on each item to cycle through Overview, Schematics, and Deployment parameters."
     >
-      <div className="mt-14 grid gap-8 md:grid-cols-2">
+      <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {gadgets.map((gadget, i) => (
           <GadgetCard key={gadget.id} gadget={gadget} index={i} />
         ))}

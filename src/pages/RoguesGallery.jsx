@@ -51,6 +51,118 @@ const villains = [
     knownAssociates: ['Former Arkham Staff', 'Underground Chemists'],
     warrants: 9,
   },
+  {
+    id: 'catwoman',
+    name: 'Catwoman',
+    alias: 'Selina Kyle',
+    image: null,
+    threat: 72,
+    status: 'AT LARGE',
+    bio: "Gotham's most elusive thief. Operates in the moral grey zone between criminal and vigilante. Her agility rivals Batman's own — a fact she reminds him of constantly.",
+    abilities: ['Agility & Stealth', 'Expert Martial Artist', 'Master Thief', 'Whip Proficiency'],
+    psych: 'Complex moral framework — not classically criminal. Driven by survival instinct forged in Gotham\'s East End. Maintains a code: targets only the corrupt wealthy. Relationship with Batman complicates all psychological profiling. Not recommended for Arkham. Flight risk: EXTREME.',
+    lastSeen: 'Diamond District, Upper Gotham',
+    knownAssociates: ['Holly Robinson', 'The Sirens', 'Batman (unconfirmed)'],
+    warrants: 23,
+  },
+  {
+    id: 'harley',
+    name: 'Harley Quinn',
+    alias: 'Dr. Harleen Quinzel',
+    image: null,
+    threat: 78,
+    status: 'ARKHAM',
+    bio: "Former Arkham psychiatrist corrupted by the Joker. Has since broken free of his influence but retains the chaotic skillset. Unpredictable combatant with Olympic-level gymnastics.",
+    abilities: ['Unpredictable Combat', 'Gymnastics', 'Psychology Expertise', 'Improvised Weaponry'],
+    psych: 'Post-Joker recovery ongoing but volatile. Exhibits rapid cycling between lucidity and manic episodes. Combat skills heightened during manic states. Former doctorate in psychiatry makes her dangerously perceptive. Current cooperation with authorities is tentative — approach with caution.',
+    lastSeen: 'Arkham Asylum, Minimum Security Wing',
+    knownAssociates: ['Poison Ivy', 'The Joker (formerly)', 'Suicide Squad (Task Force X)'],
+    warrants: 11,
+  },
+  {
+    id: 'penguin',
+    name: 'The Penguin',
+    alias: 'Oswald Cobblepot',
+    image: null,
+    threat: 65,
+    status: 'UNDER INVESTIGATION',
+    bio: "Gotham's underworld kingpin disguised as legitimate businessman. Controls the Iceberg Lounge — a front for weapons trafficking, money laundering, and information brokering.",
+    abilities: ['Criminal Network & Logistics', 'Political Influence', 'Arms Dealing', 'Intelligence Network'],
+    psych: 'Narcissistic personality with deep-seated inferiority complex masked by displays of wealth. Physically non-threatening but commands vast criminal infrastructure. Extremely paranoid — security detail is military-grade. Considers himself Gotham\'s rightful ruler.',
+    lastSeen: 'Iceberg Lounge, Burnley District',
+    knownAssociates: ['Victor Zsasz', 'Sofia Falcone', 'Various GCPD Contacts (corrupt)'],
+    warrants: 3,
+  },
+  {
+    id: 'freeze',
+    name: 'Mr. Freeze',
+    alias: 'Dr. Victor Fries',
+    image: null,
+    threat: 88,
+    status: 'ARKHAM',
+    bio: "A cryogenics scientist driven to crime by desperation to save his terminally ill wife, Nora. His freeze suit maintains his body at sub-zero temperatures — remove it and he dies.",
+    abilities: ['Cryogenic Technology', 'Genius Intellect', 'Freeze Gun', 'Sub-Zero Physiology'],
+    psych: 'Not classically criminal — driven entirely by love for his wife. Emotional state is paradoxically the coldest and most passionate in Arkham. Will cooperate if Nora\'s treatment is discussed. Extremely dangerous when cornered. Suit provides superhuman durability.',
+    lastSeen: 'Arkham Asylum, Cryogenic Containment Unit',
+    knownAssociates: ['Nora Fries (wife, cryogenic stasis)', 'GothCorp (former employer)'],
+    warrants: 6,
+  },
+  {
+    id: 'bane',
+    name: 'Bane',
+    alias: 'Unknown (Born in Peña Dura)',
+    image: null,
+    threat: 92,
+    status: 'PEÑA DURA',
+    bio: "Born and raised in a Caribbean prison. Self-educated polymath who broke the Bat. Combines peak tactical genius with Venom-enhanced superhuman strength. The only villain to truly defeat Batman.",
+    abilities: ['Peak Strength & Strategy', 'Venom Enhancement', 'Multilingual Genius', 'Military Tactics'],
+    psych: 'Genius-level strategist with monk-like discipline. Unlike other rogues, Bane operates with patience and long-term planning. Venom dependency is his weakness — without it, strength returns to peak-human. Respects Batman as an equal. Most dangerous when calm.',
+    lastSeen: 'Peña Dura Prison, Santa Prisca',
+    knownAssociates: ['Bird', 'Trogg', 'Zombie', 'League of Assassins (former)'],
+    warrants: 4,
+  },
+  {
+    id: 'twoface',
+    name: 'Two-Face',
+    alias: 'Harvey Dent',
+    image: null,
+    threat: 70,
+    status: 'ARKHAM',
+    bio: "Former District Attorney — Gotham's White Knight — scarred by acid, splitting his psyche in two. Now makes life-or-death decisions with the flip of his scarred coin.",
+    abilities: ['Psychological Volatility', 'Legal Expertise', 'Dual Personality', 'Organized Crime Leadership'],
+    psych: 'Dissociative identity disorder — the Harvey persona is still present but suppressed. The scarred side operates on binary morality: the coin decides all. Dangerous because the \"good\" half makes him unpredictable. Potential for rehabilitation exists but previous attempts have failed catastrophically.',
+    lastSeen: 'Arkham Asylum, Cell Block B',
+    knownAssociates: ['Renee Montoya (former ally)', 'Gotham Mob Remnants', 'Gilda Dent (ex-wife)'],
+    warrants: 8,
+  },
+  {
+    id: 'ivy',
+    name: 'Poison Ivy',
+    alias: 'Dr. Pamela Isley',
+    image: null,
+    threat: 90,
+    status: 'AT LARGE',
+    bio: "Eco-terrorist with complete biochemical control over plant life. Her pheromones can override human willpower. Views humanity as a plague on Earth — plants are her true family.",
+    abilities: ['Biochemical Warfare', 'Pheromone Mind Control', 'Chlorokinesis', 'Toxin Immunity'],
+    psych: 'Post-human identification — no longer considers herself part of humanity. Pheromone abilities make all interrogation unreliable. Emotional connection to Harley Quinn is the only known leverage. Environmental extremist ideology is absolute — negotiation only possible through ecological concessions.',
+    lastSeen: 'Robinson Park, Gotham (self-declared territory)',
+    knownAssociates: ['Harley Quinn', 'Swamp Thing (ideological)', 'The Green (metahuman network)'],
+    warrants: 12,
+  },
+  {
+    id: 'redhood',
+    name: 'Red Hood',
+    alias: 'Jason Todd',
+    image: null,
+    threat: 95,
+    status: 'UNKNOWN',
+    bio: "Former Robin, killed by the Joker, resurrected via Lazarus Pit. Now wages a lethal war on crime that Batman refuses to endorse. The most dangerous person who knows all of Batman's secrets.",
+    abilities: ['Lethal Vigilantism & Firepower', 'Batman-Level Training', 'Lazarus-Enhanced Physiology', 'Explosives Expert'],
+    psych: 'Extreme trauma response manifesting as controlled rage. Possesses all of Batman\'s training with none of his restraint. Kill count: classified. Motivation is genuinely anti-crime but methodology is unacceptable. Knows Bat-family identities and protocols. Threat classification debated: vigilante or villain?',
+    lastSeen: 'Crime Alley, Park Row (symbolic)',
+    knownAssociates: ['The Outlaws', 'Talia al Ghul (former)', 'Bat-Family (estranged)'],
+    warrants: 0,
+  },
 ];
 
 /* ─── Threat Bar ─── */
@@ -167,11 +279,18 @@ function VillainModal({ villain, onClose }) {
       >
         {/* Header image */}
         <div className="relative h-48 w-full overflow-hidden rounded-t-2xl">
-          <img
-            src={villain.image}
-            alt={villain.name}
-            className="h-full w-full object-cover object-top"
-          />
+          {villain.image ? (
+            <img
+              src={villain.image}
+              alt={villain.name}
+              className="h-full w-full object-cover object-top"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-gotham-700 to-gotham-950">
+              <span className="font-display text-[80px] uppercase leading-none text-signal/10">{villain.name[0]}</span>
+              <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 6px, rgba(245,197,24,0.02) 6px, rgba(245,197,24,0.02) 7px)' }} />
+            </div>
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-[#14192890] via-transparent to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
           
@@ -214,7 +333,11 @@ function VillainModal({ villain, onClose }) {
                 <div className="rounded-lg border border-white/[0.06] bg-white/[0.02] p-3">
                   <p className="text-[9px] uppercase tracking-[0.4em] text-ink-300">Status</p>
                   <p className={`mt-1 font-mono text-sm font-bold ${
-                    villain.status === 'AT LARGE' ? 'text-red-400' : 'text-yellow-400'
+                    villain.status === 'AT LARGE' ? 'text-red-400'
+                    : villain.status === 'UNKNOWN' ? 'text-purple-400'
+                    : villain.status === 'UNDER INVESTIGATION' ? 'text-blue-400'
+                    : villain.status === 'PEÑA DURA' ? 'text-orange-400'
+                    : 'text-yellow-400'
                   }`}>
                     {villain.status}
                   </p>
@@ -312,12 +435,22 @@ function VillainCard({ villain, index, onClick }) {
     >
       {/* Image */}
       <div className="relative aspect-[3/4] w-full overflow-hidden">
-        <img
-          src={villain.image}
-          alt={villain.name}
-          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          loading="lazy"
-        />
+        {villain.image ? (
+          <img
+            src={villain.image}
+            alt={villain.name}
+            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+            loading="lazy"
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-gotham-800 to-gotham-950">
+            <span className="font-display text-[100px] uppercase leading-none text-signal/[0.08] transition-all duration-700 group-hover:text-signal/[0.15] group-hover:scale-110">
+              {villain.name[0]}
+            </span>
+            {/* Atmospheric lines */}
+            <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 8px, rgba(245,197,24,0.02) 8px, rgba(245,197,24,0.02) 9px)' }} />
+          </div>
+        )}
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-gotham-900 via-gotham-900/60 to-transparent" />
         {/* Scan line effect on hover */}
@@ -333,6 +466,12 @@ function VillainCard({ villain, index, onClick }) {
             className={`rounded-full px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.3em] ${
               villain.status === 'AT LARGE'
                 ? 'bg-red-500/20 text-red-400 ring-1 ring-red-500/40'
+                : villain.status === 'UNKNOWN'
+                ? 'bg-purple-500/20 text-purple-400 ring-1 ring-purple-500/40'
+                : villain.status === 'UNDER INVESTIGATION'
+                ? 'bg-blue-500/20 text-blue-400 ring-1 ring-blue-500/40'
+                : villain.status === 'PEÑA DURA'
+                ? 'bg-orange-500/20 text-orange-400 ring-1 ring-orange-500/40'
                 : 'bg-yellow-500/20 text-yellow-400 ring-1 ring-yellow-500/40'
             }`}
           >
@@ -388,7 +527,7 @@ export default function RoguesGallery() {
       title="The Shadows of Gotham"
       lead="A catalog of the city's most dangerous minds. Click a profile to access classified GCPD files."
     >
-      <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {villains.map((villain, i) => (
           <VillainCard
             key={villain.id}
