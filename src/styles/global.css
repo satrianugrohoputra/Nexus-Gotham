@@ -14,6 +14,20 @@
   --cursor-tilt-x: 0deg;
   --cursor-tilt-y: 0deg;
   --tilt-strength: 1;
+  --accent: #f5c518;
+  --accent-glow: rgba(245, 197, 24, 0.55);
+}
+
+/* Nexus (Justice League) global theme override */
+html.nexus-theme {
+  --signal: #3b82f6;
+  --signal-warm: #d4af37;
+  --accent: #3b82f6;
+  --accent-glow: rgba(59, 130, 246, 0.35);
+}
+
+html.nexus-theme body {
+  transition: background-color 800ms ease, color 800ms ease;
 }
 
 *,
