@@ -1,7 +1,6 @@
-import BatSymbol from '../svg/BatSymbol.jsx';
-
 /**
  * The glowing oval lens with the bat silhouette inside.
+ * Uses the uploaded batmanlogo image instead of the SVG path.
  * Built from layered SVG ellipses (metal frame, inner glass, hot core)
  * plus a glass highlight that drifts slightly with the cursor.
  */
@@ -92,7 +91,7 @@ export default function Lens() {
         />
       </svg>
 
-      {/* Bat symbol overlaid in HTML so we can micro-parallax it */}
+      {/* Bat logo image overlaid — replaces old SVG BatSymbol */}
       <div
         className="absolute inset-0 flex items-center justify-center"
         style={{
@@ -101,11 +100,15 @@ export default function Lens() {
           transition: 'transform 400ms ease-out',
         }}
       >
-        <BatSymbol
-          className="h-[55%] w-[78%] text-[#0a0d14]"
+        <img
+          src="/batmanlogo.png"
+          alt="Bat Signal"
+          className="h-[62%] w-[72%] object-contain drop-shadow-lg"
           style={{
-            filter: 'drop-shadow(0 2px 1px rgba(0,0,0,0.6))',
+            filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.7))',
+            mixBlendMode: 'multiply',
           }}
+          draggable={false}
         />
       </div>
     </div>

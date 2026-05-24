@@ -48,6 +48,21 @@ export default {
           '0%, 100%': { transform: 'translateY(0) scaleX(1)', opacity: '0.55' },
           '50%': { transform: 'translateY(-12px) scaleX(1.03)', opacity: '0.7' },
         },
+        fogWisp1: {
+          '0%': { transform: 'translateX(-30px) translateY(0)', opacity: '0.4' },
+          '50%': { transform: 'translateX(30px) translateY(-8px)', opacity: '0.7' },
+          '100%': { transform: 'translateX(-30px) translateY(0)', opacity: '0.4' },
+        },
+        fogWisp2: {
+          '0%': { transform: 'translateX(25px) translateY(5px)', opacity: '0.3' },
+          '50%': { transform: 'translateX(-25px) translateY(-10px)', opacity: '0.6' },
+          '100%': { transform: 'translateX(25px) translateY(5px)', opacity: '0.3' },
+        },
+        fogWisp3: {
+          '0%': { transform: 'translateX(-15px) translateY(-5px)', opacity: '0.35' },
+          '50%': { transform: 'translateX(20px) translateY(8px)', opacity: '0.55' },
+          '100%': { transform: 'translateX(-15px) translateY(-5px)', opacity: '0.35' },
+        },
         beamBreath: {
           '0%, 100%': { opacity: '0.92', filter: 'brightness(1)' },
           '50%': { opacity: '1', filter: 'brightness(1.08)' },
@@ -86,6 +101,9 @@ export default {
         'cloud-drift-slow': 'cloudDrift 90s linear infinite alternate',
         'cloud-drift-fast': 'cloudDriftReverse 55s linear infinite alternate',
         'fog-rise': 'fogRise 8s ease-in-out infinite',
+        'fog-wisp-1': 'fogWisp1 12s ease-in-out infinite',
+        'fog-wisp-2': 'fogWisp2 15s ease-in-out infinite',
+        'fog-wisp-3': 'fogWisp3 10s ease-in-out infinite',
         'beam-breath': 'beamBreath 4.5s ease-in-out infinite',
         'cta-pulse': 'ctaPulse 2.6s ease-in-out infinite',
         scanlines: 'scanlines 0.18s steps(2) infinite',
