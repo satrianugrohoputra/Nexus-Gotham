@@ -91,18 +91,29 @@ export default function Hero() {
     <section
       ref={tiltRef}
       onTouchStart={handleTap}
-      className="relative isolate flex min-h-[100dvh] w-full items-center justify-center overflow-hidden bg-gotham-sky"
-      style={{
-        // expose css vars to children
-      }}
+      className="relative isolate flex min-h-[100dvh] w-full flex-col items-center overflow-hidden bg-gotham-sky"
     >
       {/* Background atmosphere */}
       <Sky />
       <Fog />
 
+      {/* Beam shoots from bottom center upward — placed behind scene */}
+      <div
+        className="absolute inset-x-0 bottom-0 z-[3] flex justify-center"
+        style={{
+          height: '85%',
+          transformOrigin: '50% 100%',
+          animation: reduceMotion
+            ? undefined
+            : 'beamGrow 1100ms cubic-bezier(0.2,0.7,0.2,1) 0.45s 1 backwards',
+        }}
+      >
+        <Beam />
+      </div>
+
       {/* Interactive scene container — this is what tilts with cursor */}
       <div
-        className="relative flex h-full w-full max-w-7xl flex-col items-center justify-center px-5"
+        className="relative z-[5] flex h-full min-h-[100dvh] w-full max-w-7xl flex-col items-center px-5"
         style={{
           transform:
             'perspective(1400px) rotateY(var(--cursor-tilt-x, 0deg)) rotateX(calc(var(--cursor-tilt-y, 0deg) * -1))',
@@ -110,24 +121,13 @@ export default function Hero() {
           transition: reduceMotion ? 'none' : 'transform 220ms ease-out',
         }}
       >
-        {/* Tagline */}
-        <div className="absolute inset-x-0 top-[14%]">
+        {/* Tagline — positioned near the top, below navbar */}
+        <div className="relative z-[7] mt-[12vh] w-full">
           <Tagline revealStartDelayMs={1700} />
         </div>
 
-        {/* Stage: beam + lens + particles, vertically centered slightly above middle */}
-        <div className="relative flex flex-col items-center justify-center" style={{ marginTop: '4vh' }}>
-          {/* Beam grows on intro */}
-          <div
-            style={{
-              transformOrigin: '50% 100%',
-              animation: reduceMotion
-                ? undefined
-                : 'beamGrow 1100ms cubic-bezier(0.2,0.7,0.2,1) 0.45s 1 backwards',
-            }}
-          >
-            <Beam />
-          </div>
+        {/* Stage: lens + particles, vertically centered */}
+        <div className="relative flex flex-1 flex-col items-center justify-center" style={{ marginTop: '-2vh' }}>
           {!reduceMotion && <Particles />}
           <div
             style={{
@@ -142,8 +142,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="absolute inset-x-0 bottom-[12%] flex justify-center">
+        {/* CTA — positioned below the bat signal with clear separation */}
+        <div className="relative z-[7] mb-[10vh] flex justify-center">
           <ExploreCTA revealDelayMs={3300} onTrigger={handleExplore} />
         </div>
 
@@ -206,7 +206,7 @@ export default function Hero() {
 
       {/* Scroll hint chevron — only after intro */}
       <div
-        className="pointer-events-none absolute inset-x-0 bottom-4 flex justify-center text-ink-200/70"
+        className="pointer-events-none absolute inset-x-0 bottom-4 z-[6] flex justify-center text-ink-200/70"
         style={{
           opacity: introDone && !zooming ? 1 : 0,
           transition: 'opacity 700ms ease',
